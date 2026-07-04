@@ -1,0 +1,8 @@
+.dock {
+  display: flex;
+  left: 50%;
+  gap: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=Dock.css.map */
