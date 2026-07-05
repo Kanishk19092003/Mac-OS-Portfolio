@@ -1,6 +1,7 @@
 .window {
-    height: 500px;
-    width: 700px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 
     background-color: #060606;
     border-radius: 0.75rem;
@@ -12,6 +13,7 @@
 
     .nav {
 
+        flex-shrink: 0;
         padding-inline: 0.75rem;
         padding-block: 0.5rem;
         border-bottom: 1px solid rgba(245, 245, 245, 0.24);
@@ -49,5 +51,10 @@
 
 
     }
+    .main-content {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
 
 }

@@ -5,11 +5,12 @@ const MacWindow = ({ children }) => {
   return (
     <Rnd
     dragHandleClassName="nav"
+    enableUserSelectHack={false}
       default={{
         x: 100,
         y: 100,
-        width: 700,
-        height: 500,
+        width: "40vw",
+        height: "40vh",
       }}
     >
       <div className="window">
