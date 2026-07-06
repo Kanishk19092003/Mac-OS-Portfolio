@@ -1,0 +1,26 @@
+.cli-window {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent !important;
+}
+
+.cli-window .react-terminal-window-buttons {
+  display: none !important;
+}
+
+.cli-window > div {
+  width: 100%;
+  height: 100%;
+}
+
+/* Terminal ke top header ko hide karo */
+.cli-window > div > div:first-child {
+  display: none !important;
+}
+
+/* Terminal body ko full height do */
+.cli-window > div > div:last-child {
+  height: 100% !important;
+}
+

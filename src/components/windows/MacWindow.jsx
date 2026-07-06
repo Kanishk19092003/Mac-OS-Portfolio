@@ -1,16 +1,27 @@
 import { Rnd } from "react-rnd";
+import { useMemo } from "react";
 import "./window.scss";
 
-const MacWindow = ({ children }) => {
+
+
+const MacWindow = ({ children, width = "40vw", height = "40vh" }) => {
+
+const position = useMemo(() => {
+    return {
+      x: Math.floor(Math.random() * (window.innerWidth * 0.35)) + 50,
+      y: Math.floor(Math.random() * (window.innerHeight * 0.2)) + 50,
+    };
+  }, []);
+
   return (
     <Rnd
     dragHandleClassName="nav"
     enableUserSelectHack={false}
       default={{
-        x: 100,
-        y: 100,
-        width: "50vw",
-        height: "50vh",
+        x: position.x,
+        y: position.y,
+        width: width,
+        height: height,
       }}
     >
       <div className="window">

@@ -16,6 +16,8 @@
     "react-markdown": "^10.1.0",
     "react-rnd": "^10.5.3",
     "react-syntax-highlighter": "^16.1.1",
+    "react-terminal-component-new": "^2.3.6",
+    "react-terminal-ui": "^1.4.0",
     "remark-gfm": "^4.0.1",
     "sass": "^1.101.0",
     "tailwindcss": "^4.3.2"
