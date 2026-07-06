@@ -8,7 +8,7 @@ import "./cli.scss"
 
 import MacWindow from "./MacWindow";
 
-const Cli = () => {
+const Cli = ({ windowName, setWindowsState }) => {
   const [lines, setLines] = useState([
     <TerminalOutput key="welcome1">
       Welcome to Kanishk's Portfolio 🚀
@@ -110,7 +110,8 @@ const Cli = () => {
   };
 
   return (
-    <MacWindow title="Terminal" width="45vw" height="55vh">
+    <MacWindow windowName={windowName} setWindowsState={setWindowsState}
+    title="Terminal" width="45vw" height="55vh">
       <div
         style={{
           width: "100%",
