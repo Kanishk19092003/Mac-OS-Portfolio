@@ -9,8 +9,8 @@ const MacWindow = ({ children }) => {
       default={{
         x: 100,
         y: 100,
-        width: "40vw",
-        height: "40vh",
+        width: "50vw",
+        height: "50vh",
       }}
     >
       <div className="window">
